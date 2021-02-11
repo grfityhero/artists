@@ -1,5 +1,5 @@
 const $mainboard = document.getElementById("mainboard"),
-$happy = document.getElementById("happy"),
+  $happy = document.getElementById("happy"),
   $language = document.getElementById("language"),
   numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8],
   $audioTag = document.getElementById("audio"),
@@ -98,7 +98,7 @@ const selectedAnswer = ($event) => {
 
   if (currentSelectedAnswer === correctAnswer) {
     $mainboard.classList.add("correct")
-   /*  $happy.classList.add("show-me")  */
+    /*  $happy.classList.add("show-me")  */
 
     $audioTag.src = soundsUrls.correct
     $audioTag.play()
@@ -115,7 +115,7 @@ const selectedAnswer = ($event) => {
 
     setTimeout(() => {
       playSound(currentSelectedAnswer)
-    }, 1100)
+    }, 1700)
 
     setTimeout(() => {
       $mainboard.classList.remove("wrong")
