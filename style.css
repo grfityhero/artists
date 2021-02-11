@@ -17,13 +17,13 @@ body {
     width: 600px;
     height: 600px;
 
-    padding: 12px;
+    padding: 20px;
     background: #0000007e;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    border: 1px solid #000000;
+    border: 1px solid #e0e0e0;
     border-radius: 8px;
     transition: background 500ms;
 }
