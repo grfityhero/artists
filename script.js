@@ -104,9 +104,9 @@ const selectedAnswer = ($event) => {
     $audioTag.play()
     setTimeout(() => {
       $mainboard.classList.remove("correct")
-      /* $happy.classList.remove("show-me")  */
+     
       createLevel()
-    }, 0)
+    }, 500)
   } else {
     $mainboard.classList.add("wrong")
 

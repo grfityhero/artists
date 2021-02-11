@@ -32,7 +32,7 @@ body {
      width:100vw;
      height:100vh;
     background-image: url('https://cdn.britannica.com/51/194651-050-747F0C18/Interior-National-Gallery-of-Art-Washington-DC.jpg');
-   /*  filter: blur(1px); */
+   
     position: absolute;
     width: 100%;
     height: 100%;
@@ -40,11 +40,18 @@ body {
 }
 #mainboard.correct {
     background: green;
+    animation: growSome 1s infinite;
     pointer-events: none;
+    
+    animation-name: spin;
+    animation-duration: 2000ms;
+    animation-iteration-count: 1;
+
 }
 #mainboard.wrong {
-    background: orangered;
+    background: rgb(255, 0, 0);
     pointer-events: none;
+    animation: pulse 1s infinite;
 }
 
 #mainboard li {
@@ -95,16 +102,32 @@ body {
 
 .happy.show-me{
     display:block;
- animation: growSome .25s; 
+   
 }
 
- @keyframes growSome {
-    from {
-      transform: scale(0);
-    }
-    to {
-      transform: scale(1);
-    }
-  } 
+@keyframes spin {
+  from {  
+    transform:rotate(0deg);
+  }
+  to {  
+    transform:rotate(360deg);
+  }
+}
 
+
+@keyframes pulse {
+ 
+  80% {
+    background-color: #ff5e00;
+  }
+  100% {
+    background-color: #ff00aa;
+  }
+  80% {
+    background-color: #ffa600;
+  }
+  100% {
+    background-color: #ff0000;
+  }
+}
 
