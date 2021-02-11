@@ -24,6 +24,7 @@ body {
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     transition: background 500ms;
+    box-shadow: 12px 20px 11px 6px rgba(0,0,0,0.34);
 }
 
 
@@ -31,7 +32,6 @@ body {
      width:100vw;
      height:100vh;
     background-image: url('https://cdn.britannica.com/51/194651-050-747F0C18/Interior-National-Gallery-of-Art-Washington-DC.jpg');
-
     filter: blur(4px);
     position: absolute;
     width: 100%;
